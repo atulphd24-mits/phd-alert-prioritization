@@ -1,17 +1,34 @@
+# =========================
 # Python
+# =========================
 __pycache__/
 *.py[cod]
 *.pyo
+*.so
+*$py.class
 
+# =========================
 # Virtual environments
+# =========================
 .venv/
 venv/
 env/
+ENV/
+env.bak/
+venv.bak/
+.venv
 
-# Jupyter
+# =========================
+# Jupyter / IPython
+# =========================
 .ipynb_checkpoints/
+ipython_config.py
+profile_default/
 
-# Data
+# =========================
+# Research datasets
+# IMPORTANT: Do not commit large datasets
+# =========================
 datasets/
 data/
 *.csv
@@ -22,20 +39,122 @@ data/
 *.tar
 *.gz
 
-# Outputs
+# =========================
+# Research outputs
+# =========================
 outputs/
 results/
 logs/
 
+# =========================
 # Environment / secrets
+# =========================
 .env
 .env.*
+.envrc
 *.pem
 *.key
+.pypirc
 
-# IDE
+# =========================
+# IDE / editors
+# =========================
 .vscode/
+.idea/
+.spyderproject
+.spyproject
+.ropeproject
+tempCodeRunnerFile.py
 
+# =========================
+# Testing / coverage
+# =========================
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.pyre/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+nosetests.xml
+*.cover
+*.py.cover
+.hypothesis/
+
+# =========================
+# Python packaging
+# =========================
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# =========================
+# PyInstaller
+# =========================
+*.manifest
+*.spec
+
+# =========================
+# Documentation builds
+# =========================
+docs/_build/
+/site
+
+# =========================
+# Framework / application files
+# =========================
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+instance/
+.webassets-cache
+.scrapy
+.pybuilder/
+target/
+
+# =========================
+# Package / environment managers
+# =========================
+.pdm-python
+.pdm-build/
+.pixi
+__pypackages__/
+
+# =========================
+# Miscellaneous tools
+# =========================
+celerybeat-schedule
+celerybeat.pid
+mnesia/
+rabbitmq/
+rabbitmq-data/
+activemq-data/
+cython_debug/
+.abstra/
+.streamlit/secrets.toml
+
+# =========================
 # OS
+# =========================
 .DS_Store
 Thumbs.db
